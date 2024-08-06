@@ -1,13 +1,13 @@
-# Chatting Site [MERN Stack]
+# Takify [MERN Stack]
 
 Takify is an online chatting application that allows users to communicate in real-time. Users can send text messages to each others.
 
 ## Features
 
-- Real-time messaging
-- User Login and Registration
-- Set user Avatar
-- Share Emojis 
+- Real-time messaging: Instant communication with friends and contacts.
+- User Login and Registration: Secure account creation and access.
+- Set user Avatar: Personalize your profile with a custom avatar.
+- Share Emojis: Express yourself with a wide range of emojis.
 
 ## Technologies Used
 
@@ -34,7 +34,7 @@ Takify is an online chatting application that allows users to communicate in rea
 3. Set up MongoDB Database using .env file:
 
    - Make a Database in MongoDB.
-   - Save the URI and password in .env file.
+   - Save the URI and password in .env file in Backend.
 
 4. Start the development server for both backend and frontend:
     ```sh

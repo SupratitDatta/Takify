@@ -7,86 +7,114 @@
     gap: 1rem;
     align-items: center;
     background-color: #0e020f;
-}
-
-.register-container .brand {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.register-container .brand img {
-    height: 4rem;
-    border-radius: 50%;
-    box-shadow: 0px 0px 20px rgba(128, 0, 128, 0.7);
-}
-
-.register-container .brand h1 {
-    font-family: "Dela Gothic One", sans-serif;
-    color: purple;
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 5px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-}
-
-.register-container form {
-    width: 30rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: #1e0421;
-    border-radius: 2rem;
-    margin: 4rem;
-    padding: 3rem 4rem;
-}
-
-.register-container input {
-    background-color: transparent;
     padding: 1rem;
-    border: 0.1rem solid #850f8d;
-    border-radius: 0.4rem;
-    color: white;
-    width: auto;
-    font-size: 1rem;
-}
 
-.register-container input:focus {
-    border: 0.1rem solid #af47d2;
-    outline: none;
-}
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
 
-.register-container input::placeholder {
-    color: white;
-}
+        img {
+            height: 4rem;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgba(128, 0, 128, 0.7);
+        }
 
-.register-container button {
-    background-color: #810f89;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 0.4rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-}
+        h1 {
+            font-family: "Dela Gothic One", sans-serif;
+            color: purple;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+        }
+    }
 
-.register-container button:hover {
-    background-color: #650e6c;
-}
+    form {
+        width: 100%;
+        max-width: 30rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #1e0421;
+        border-radius: 2rem;
+        margin: 4rem 1rem;
+        padding: 3rem 2rem;
 
-.register-container span {
-    color: white;
-    text-transform: uppercase;
-    word-spacing: 3px;
-    text-align: center;
-}
+        input {
+            background-color: transparent;
+            padding: 1rem;
+            border: 0.1rem solid #850f8d;
+            border-radius: 0.4rem;
+            color: white;
+            width: 100%;
+            font-size: 1rem;
 
-.register-container span a {
-    color: #b916cc;
-    text-decoration: none;
-    font-weight: bold;
+            &:focus {
+                border: 0.1rem solid #af47d2;
+                outline: none;
+            }
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        button {
+            background-color: #810f89;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 0.4rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: #650e6c;
+            }
+        }
+
+        span {
+            color: white;
+            text-transform: uppercase;
+            word-spacing: 3px;
+            text-align: center;
+
+            a {
+                color: #b916cc;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: 100vh;
+
+        form {
+            margin: 2rem 1rem;
+            padding: 2rem 1rem;
+        }
+
+        .brand h1 {
+            font-size: 30px;
+            letter-spacing: 3px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        form {
+            margin: 1rem 0.5rem;
+            padding: 1.5rem 1rem;
+        }
+
+        .brand h1 {
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+    }
 }

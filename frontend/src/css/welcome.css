@@ -4,12 +4,30 @@
     align-items: center;
     color: white;
     flex-direction: column;
+    text-align: center;
+    padding: 1rem;
 }
 
 .welcome-container img {
-    height: 20rem;
+    height: 10rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
 .welcome-container span {
     color: #B630D1;
+}
+
+@media screen and (max-width: 720px) {
+    .welcome-container {
+        padding: 2rem;
+    }
+
+    .welcome-container img {
+        height: 8rem;
+        width: 12rem;
+        margin-bottom: 1rem;
+        margin-top: 8rem;
+    }
 }
